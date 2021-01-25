@@ -43,5 +43,6 @@ char		*ft_strncpy(char *dest, char *src, unsigned int n)
 char		*ft_strncat(char *dest, char *src, unsigned int nb)
 {
 	ft_strncpy(dest + ft_strlen(dest), src, nb);
+	//FIXME
 	return (dest);
 }
