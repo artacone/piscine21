@@ -45,6 +45,10 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	unsigned int destlen;
 
 	destlen = ft_strlen(dest);
+	if (size == 0 || dstlen > size)
+	{
+		return (destlen + ft_strlen(src));
+	}
 	ft_strlcpy(dest + destlen, src, size - destlen);
 	return (destlen + ft_strlen(src));
 }
