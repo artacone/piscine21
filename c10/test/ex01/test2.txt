@@ -1,0 +1,7 @@
+This is a regular text with 
+
+line breaks
+
+and			tabs!
+
+Nothing special though :)
