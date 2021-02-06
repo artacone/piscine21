@@ -26,7 +26,7 @@ void		*btree_search_item(t_btree *root,
 	{
 		return (to_find);
 	}
-	if (!cmpf(root->item, to_find))
+	if (!cmpf(root->item, data_ref))
 	{
 		return (root->item);
 	}
