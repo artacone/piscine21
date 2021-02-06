@@ -19,8 +19,8 @@ int			btree_level_count(t_btree *root)
 
 	if (root)
 	{
-		ldepth = btree_level_count(root->left) + 1;
-		rdepth = btree_level_count(root->right) + 1;
+		ldepth = btree_level_count(root->left);
+		rdepth = btree_level_count(root->right);
 		return ((ldepth > rdepth) ? ldepth + 1 : rdepth + 1);
 	}
 	return (0);
