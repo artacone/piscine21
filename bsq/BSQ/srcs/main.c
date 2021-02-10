@@ -50,6 +50,8 @@ int			main(int argc, char *argv[])
 {
 	t_map	map;
 
+	map.int_map = NULL;
+	map.char_map = NULL;
 	if (argc < 1)
 	{
 		FT_CRIT("no args");
