@@ -6,30 +6,22 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/21 00:33:46 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/21 13:46:35 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/14 14:44:27 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-void		ft_nextline(void)
+void	ft_putnbr(int nbr);
+
+int		main(int argc, char *argv[])
 {
-	write(1, "\n", 1);
-}
-
-void		ft_putnbr(int nb);
-
-int			main(void)
-{
-	ft_putnbr(-123);
-	ft_nextline();
-	ft_putnbr(-0);
-	ft_nextline();
-	ft_putnbr(0);
-	ft_nextline();
-	ft_putnbr(1234);
-	ft_nextline();
-	ft_putnbr(-2147483648);
-	ft_nextline();
+	if (argc < 2)
+	{
+		return (1);
+	}
+	ft_putnbr(atoi(argv[1]));
+	printf("\n");
 	return (0);
 }

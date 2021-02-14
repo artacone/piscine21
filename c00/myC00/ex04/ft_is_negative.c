@@ -6,18 +6,18 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/20 21:59:37 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/20 22:01:49 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/14 14:05:50 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void		ft_putchar(char c)
+void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
 
-void		ft_is_negative(int n)
+void	ft_is_negative(int n)
 {
 	if (n >= 0)
 	{

@@ -1,31 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_combn.c                                   :+:      :+:    :+:   */
+/*   main08.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/21 13:57:13 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/21 15:06:04 by rvertie          ###   ########.fr       */
+/*   Created: 2021/01/20 23:34:59 by rvertie           #+#    #+#             */
+/*   Updated: 2021/02/14 15:14:45 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+#include <stdlib.h>
 
-#include <unistd.h>
+void		ft_print_combn(int n);
 
-void		ft_putchar(char c)
+int			main(int argc, char *argv[])
 {
-	write(1, &c, 1);
-}
-
-void		comb_separator(void)
-{
-	ft_putchar(',');
-	ft_putchar(' ');
-}
-
-void ft_print_combn(int n)
-{
-	int perm[n];
-	
+	if (argc != 2)
+	{
+		return (1);
+	}
+	ft_print_combn(atoi(argv[1]));
+	printf("\n");
+	return (0);
 }

@@ -6,25 +6,24 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/20 21:51:30 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/20 21:57:21 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/14 14:04:31 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void		ft_putchar(char c)
+void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
 
-void		ft_print_numbers(void)
+void	ft_print_numbers(void)
 {
-	char c;
+	char	c;
 
 	c = '0';
 	while (c <= '9')
 	{
-		ft_putchar(c);
-		c++;
+		ft_putchar(c++);
 	}
 }

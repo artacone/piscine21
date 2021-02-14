@@ -6,7 +6,7 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/20 19:47:22 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/20 20:01:15 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/14 14:01:14 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ void	ft_print_alphabet(void)
 	c = 'a';
 	while (c <= 'z')
 	{
-		ft_putchar(c);
-		c++;
+		ft_putchar(c++);
 	}
 }
