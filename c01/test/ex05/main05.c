@@ -6,7 +6,7 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/21 20:02:13 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/21 20:17:48 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/14 17:22:28 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,11 @@
 
 void		ft_putstr(char *str);
 
-int			main(void)
+int			main(int argc, char *argv[])
 {
-	char str[20] = "Hello, world!\0";
-	ft_putstr(str);
+	for (int i = 0; i < 10000; i++)
+	{
+		ft_putstr("LOLKEKCHEBUREK\n");
+	}
 	return (0);
 }

@@ -6,13 +6,13 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/21 20:26:36 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/21 20:32:55 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/14 17:30:55 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
-	unsigned int len;
+	int	len;
 
 	len = 0;
 	while (str[len])

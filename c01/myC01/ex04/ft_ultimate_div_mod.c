@@ -6,18 +6,18 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/21 18:33:23 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/21 18:37:42 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/14 16:05:04 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void		ft_ultimate_div_mod(int *a, int *b)
+void	ft_ultimate_div_mod(int *a, int *b)
 {
-	int t;
+	int	tmp;
 
 	if (*b != 0)
 	{
-		t = *a;
+		tmp = *a;
 		*a = *a / *b;
-		*b = t % *b;
+		*b = tmp % *b;
 	}
 }

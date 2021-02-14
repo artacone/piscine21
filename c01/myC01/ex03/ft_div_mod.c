@@ -6,11 +6,11 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/21 18:23:55 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/21 18:27:12 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/14 16:02:56 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void		ft_div_mod(int a, int b, int *div, int *mod)
+void	ft_div_mod(int a, int b, int *div, int *mod)
 {
 	if (b != 0)
 	{

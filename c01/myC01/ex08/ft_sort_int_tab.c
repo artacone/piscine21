@@ -6,24 +6,24 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/21 20:57:22 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/21 22:19:08 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/14 17:40:02 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void		ft_swap(int *a, int *b)
+void	ft_swap(int *l, int *r)
 {
-	int tmp;
+	int	tmp;
 
-	tmp = *a;
-	*a = *b;
-	*b = tmp;
+	tmp = *l;
+	*l = *r;
+	*r = tmp;
 }
 
-int			ft_qs_partition(int *tab, int l, int r)
+int		ft_qs_partition(int *tab, int l, int r)
 {
-	int x;
-	int less;
-	int i;
+	int	x;
+	int	less;
+	int	i;
 
 	x = tab[r];
 	less = l;
@@ -41,9 +41,9 @@ int			ft_qs_partition(int *tab, int l, int r)
 	return (less);
 }
 
-void		ft_qs_impl(int *tab, int l, int r)
+void	ft_qs_impl(int *tab, int l, int r)
 {
-	int q;
+	int	q;
 
 	if (l < r)
 	{
@@ -53,7 +53,7 @@ void		ft_qs_impl(int *tab, int l, int r)
 	}
 }
 
-void		ft_sort_int_tab(int *tab, int size)
+void	ft_sort_int_tab(int *tab, int size)
 {
 	if (size)
 	{

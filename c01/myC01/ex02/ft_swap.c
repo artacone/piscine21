@@ -6,15 +6,15 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/21 18:12:08 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/21 18:13:18 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/14 16:02:43 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void		ft_swap(int *a, int *b)
+void	ft_swap(int *a, int *b)
 {
-	int t;
+	int	tmp;
 
-	t = *a;
+	tmp = *a;
 	*a = *b;
-	*b = t;
+	*b = tmp;
 }
