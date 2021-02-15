@@ -6,7 +6,7 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/23 19:19:51 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/16 00:52:02 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/16 01:15:22 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,8 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 	{
 		if (size != 0)
 			*d = '\0';
-		while (*s)
-			s++;
+		while (*s++)
+			;
 	}
 	return (s - src - 1);
 }
