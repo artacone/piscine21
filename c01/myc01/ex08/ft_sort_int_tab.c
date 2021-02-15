@@ -6,7 +6,7 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/21 20:57:22 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/14 17:40:02 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/15 18:08:52 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_swap(int *l, int *r)
 	*r = tmp;
 }
 
-int		ft_qs_partition(int *tab, int l, int r)
+int	ft_qs_partition(int *tab, int l, int r)
 {
 	int	x;
 	int	less;
