@@ -6,7 +6,7 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/21 18:47:32 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/15 18:08:34 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/16 00:21:19 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 int	ft_strlen(char *str)
 {
-	int	len;
+	char	*s;
 
-	len = 0;
-	while (str[len])
+	s = str;
+	while (*s)
 	{
-		len++;
+		s++;
 	}
-	return (len);
+	return (s - str);
 }
 
 void	ft_putstr(char *str)

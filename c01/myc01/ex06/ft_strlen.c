@@ -6,18 +6,18 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/21 20:26:36 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/14 17:30:55 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/16 00:22:14 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_strlen(char *str)
 {
-	int	len;
+	char	*s;
 
-	len = 0;
-	while (str[len])
+	s = str;
+	while (*s)
 	{
-		len++;
+		s++;
 	}
-	return (len);
+	return (s - str);
 }
