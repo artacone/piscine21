@@ -6,7 +6,7 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/21 00:17:53 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/14 14:42:15 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/15 18:07:17 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-int		nbr_check(int nbr, char *stack, int *i)
+int	nbr_check(int nbr, char *stack, int *i)
 {
 	if (nbr == -2147483648)
 	{
