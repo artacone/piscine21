@@ -6,27 +6,27 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/23 14:46:39 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/23 18:36:27 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/15 02:28:31 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int			ft_is_uppercase(char c)
+int		ft_is_uppercase(char c)
 {
 	return (c >= 'A' && c <= 'Z');
 }
 
-char		*ft_strlowcase(char *str)
+char	*ft_strlowcase(char *str)
 {
-	unsigned int i;
+	char	*s;
 
-	i = 0;
-	while (str[i])
+	s = str;
+	while (*s)
 	{
-		if (ft_is_uppercase(str[i]))
+		if (ft_is_uppercase(*s))
 		{
-			str[i] = 'a' + (str[i] - 'A');
+			*s = 'a' + (*s - 'A');
 		}
-		i++;
+		s++;
 	}
 	return (str);
 }

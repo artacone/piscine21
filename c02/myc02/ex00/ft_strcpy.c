@@ -6,20 +6,21 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/22 11:41:39 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/22 21:54:07 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/15 02:11:29 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char		*ft_strcpy(char *dest, char *src)
+char	*ft_strcpy(char *dest, char *src)
 {
-	unsigned int i;
+	char	*d;
+	char	*s;
 
-	i = 0;
-	while (src[i])
+	d = dest;
+	s = src;
+	while (*s)
 	{
-		dest[i] = src[i];
-		i++;
+		*d++ = *s++;
 	}
-	dest[i] = '\0';
+	*d = *s;
 	return (dest);
 }

@@ -37,6 +37,29 @@ Contains materials from School 21's C Piscine.
 
 08 ft_sort_int_tab
 ### c02
+00 ft_strcpy
+
+01 ft_strncpy
+
+02 ft_str_is_alpha
+
+03 ft_str_is_numeric
+
+04 ft_str_is_lowercase
+
+05 ft_str_is_uppercase
+
+06 ft_str_is_printable
+
+07 ft_strupcase
+
+08 ft_strlowcase
+
+09 ft_strcapitalize
+
+10 ft_strlcpy
+
+11 ft_putstr_non_printable
 ### c03
 ### c04
 ### c05

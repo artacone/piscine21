@@ -6,11 +6,11 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/23 18:43:44 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/23 21:16:36 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/15 02:39:54 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int			ft_is_alphanumeric(char c)
+int		ft_is_alphanumeric(char c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 	{
@@ -23,39 +23,39 @@ int			ft_is_alphanumeric(char c)
 	return (0);
 }
 
-int			ft_is_uppercase(char c)
+int		ft_is_uppercase(char c)
 {
 	return (c >= 'A' && c <= 'Z');
 }
 
-int			ft_is_lowercase(char c)
+int		ft_is_lowercase(char c)
 {
 	return (c >= 'a' && c <= 'z');
 }
 
-char		*ft_strcapitalize(char *str)
+char	*ft_strcapitalize(char *str)
 {
-	unsigned int i;
+	char	*s;
 
-	i = 0;
-	while (str[i])
+	s = str;
+	while (*s)
 	{
-		while (str[i] && !ft_is_alphanumeric(str[i]))
+		while (*s && !ft_is_alphanumeric(*s))
 		{
-			i++;
+			s++;
 		}
-		if (str[i] && ft_is_lowercase(str[i]))
+		if (*s && ft_is_lowercase(*s))
 		{
-			str[i] = 'A' + (str[i] - 'a');
-			i++;
+			*s = 'A' + (*s - 'a');
 		}
-		while (str[i] && ft_is_alphanumeric(str[i]))
+		s++;
+		while (*s && ft_is_alphanumeric(*s))
 		{
-			if (ft_is_uppercase(str[i]))
+			if (ft_is_uppercase(*s))
 			{
-				str[i] = 'a' + (str[i] - 'A');
+				*s = 'a' + (*s - 'A');
 			}
-			i++;
+			s++;
 		}
 	}
 	return (str);

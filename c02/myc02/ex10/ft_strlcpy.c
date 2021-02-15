@@ -6,13 +6,13 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/23 19:19:51 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/23 19:58:11 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/15 02:45:35 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int				ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
-	unsigned int len;
+	int	len;
 
 	len = 0;
 	while (str[len])
@@ -24,7 +24,7 @@ int				ft_strlen(char *str)
 
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
-	unsigned int i;
+	unsigned int	i;
 
 	i = 0;
 	if (size == 0)

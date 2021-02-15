@@ -6,24 +6,26 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/22 23:56:37 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/23 18:41:10 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/15 02:21:59 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int			ft_is_numeric(char c)
+int	ft_is_numeric(char c)
 {
 	return (c >= '0' && c <= '9');
 }
 
-int			ft_str_is_numeric(char *str)
+int	ft_str_is_numeric(char *str)
 {
-	while (*str)
+	char	*s;
+
+	s = str;
+	while (*s)
 	{
-		if (!ft_is_numeric(*str))
+		if (!ft_is_numeric(*s++))
 		{
 			return (0);
 		}
-		str++;
 	}
 	return (1);
 }
