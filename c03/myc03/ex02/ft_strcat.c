@@ -6,37 +6,38 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/24 18:39:51 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/24 19:40:48 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/16 00:15:20 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int			ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
-	unsigned int len;
+	char	*s;
 
-	len = 0;
-	while (str[len])
+	s = str;
+	while (*s)
 	{
-		len++;
+		s++;
 	}
-	return (len);
+	return (s - str);
 }
 
-char		*ft_strcpy(char *dest, char *src)
+char	*ft_strcpy(char *dest, char *src)
 {
-	unsigned int i;
+	char	*d;
+	char	*s;
 
-	i = 0;
-	while (src[i])
+	d = dest;
+	s = src;
+	while (*s)
 	{
-		dest[i] = src[i];
-		i++;
+		*d++ = *s++;
 	}
-	dest[i] = '\0';
+	*d = '\0';
 	return (dest);
 }
 
-char		*ft_strcat(char *dest, char *src)
+char	*ft_strcat(char *dest, char *src)
 {
 	ft_strcpy(dest + ft_strlen(dest), src);
 	return (dest);

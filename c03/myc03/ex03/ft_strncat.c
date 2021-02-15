@@ -6,43 +6,31 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/24 19:41:45 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/24 19:46:07 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/16 01:49:34 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int			ft_strlen(char *str)
+char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
-	unsigned int len;
+	char	*d;
+	char	*s;
 
-	len = 0;
-	while (str[len])
+	d = dest;
+	s = src;
+	if (nb != 0)
 	{
-		len++;
+		while (*d != '\0')
+		{
+			d++;
+		}
+		while (nb-- != 0)
+		{
+			*d = *s;
+			if (*s++ == 0)
+				break ;
+			d++;
+		}
+		*d = '\0';
 	}
-	return (len);
-}
-
-char		*ft_strncpy(char *dest, char *src, unsigned int n)
-{
-	unsigned int i;
-
-	i = 0;
-	while (i < n && src[i])
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	while (i < n)
-	{
-		dest[i] = '\0';
-		i++;
-	}
-	return (dest);
-}
-
-char		*ft_strncat(char *dest, char *src, unsigned int nb)
-{
-	ft_strncpy(dest + ft_strlen(dest), src, nb);
-	//FIXME
 	return (dest);
 }

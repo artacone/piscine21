@@ -6,26 +6,28 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/24 17:34:11 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/24 18:36:20 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/15 23:36:35 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int			ft_strncmp(char *s1, char *s2, unsigned int n)
+int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i;
+	char	*str1;
+	char	*str2;
 
-	i = 0;
-	while (i < n)
+	str1 = s1;
+	str2 = s2;
+	while (n)
 	{
-		if (s1[i] != s2[i])
+		if (*str1 != *str2++)
 		{
-			return (s1[i] - s2[i]);
+			return (*(unsigned char *)str1 - *(unsigned char *)(str2 - 1));
 		}
-		if (!s1[i])
+		if (*str1++ == '\0')
 		{
 			break ;
 		}
-		i++;
+		n--;
 	}
 	return (0);
 }
