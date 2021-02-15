@@ -1,32 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
+/*   main11.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/23 14:46:39 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/15 18:00:40 by rvertie          ###   ########.fr       */
+/*   Created: 2021/02/15 17:21:46 by rvertie           #+#    #+#             */
+/*   Updated: 2021/02/15 17:33:21 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_is_uppercase(char c)
-{
-	return (c >= 'A' && c <= 'Z');
-}
+#include <stdio.h>
 
-char	*ft_strlowcase(char *str)
-{
-	char	*s;
+void	ft_putstr_non_printable(char *str);
 
-	s = str;
-	while (*s)
-	{
-		if (ft_is_uppercase(*s))
-		{
-			*s = 'a' + (*s - 'A');
-		}
-		s++;
-	}
-	return (str);
+int	main(void)
+{
+	char str[] = "Weird \n staff \v there!";
+	ft_putstr_non_printable(str);
+	printf("\n");
+	return (0);
 }

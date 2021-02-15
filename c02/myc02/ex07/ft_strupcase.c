@@ -6,11 +6,11 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/23 14:38:54 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/15 02:26:45 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/15 18:00:30 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_is_lowercase(char c)
+int	ft_is_lowercase(char c)
 {
 	return (c >= 'a' && c <= 'z');
 }

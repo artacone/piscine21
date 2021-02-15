@@ -6,11 +6,11 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/23 18:43:44 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/15 02:39:54 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/15 18:00:56 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_is_alphanumeric(char c)
+int	ft_is_alphanumeric(char c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 	{
@@ -23,12 +23,12 @@ int		ft_is_alphanumeric(char c)
 	return (0);
 }
 
-int		ft_is_uppercase(char c)
+int	ft_is_uppercase(char c)
 {
 	return (c >= 'A' && c <= 'Z');
 }
 
-int		ft_is_lowercase(char c)
+int	ft_is_lowercase(char c)
 {
 	return (c >= 'a' && c <= 'z');
 }

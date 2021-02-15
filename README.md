@@ -1,5 +1,6 @@
 # piscine21
 Contains materials from School 21's C Piscine.
+
 ### c00
 00 ft_putchar
 
@@ -18,6 +19,7 @@ Contains materials from School 21's C Piscine.
 07 ft_putnbr
 
 08 ft_print_combn -- KO
+
 ### c01
 00 ft_ft
 
@@ -36,6 +38,7 @@ Contains materials from School 21's C Piscine.
 07 ft_rev_int_tab
 
 08 ft_sort_int_tab
+
 ### c02
 00 ft_strcpy
 
@@ -60,6 +63,9 @@ Contains materials from School 21's C Piscine.
 10 ft_strlcpy
 
 11 ft_putstr_non_printable
+
+12 ft_print_memory
+
 ### c03
 ### c04
 ### c05
