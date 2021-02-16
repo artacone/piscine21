@@ -6,53 +6,59 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/25 17:09:21 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/25 23:12:19 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/17 00:18:46 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void		ft_putchar(char c)
+void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
 
-int			ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
-	unsigned int len;
+	char	*s;
 
-	len = 0;
-	while (str[len])
+	s = str;
+	while (*s)
 	{
-		len++;
+		s++;
 	}
-	return (len);
+	return (s - str);
 }
 
-int			nbrcheck(int nbr, char *base, int *stack, int *i)
+int	nbr_check(int nbr, char *base, char *stack, int *i)
 {
-	int radix;
+	int	radix;
 
 	radix = ft_strlen(base);
 	if (nbr == -2147483648)
 	{
 		ft_putchar('-');
-		stack[0] = (-1) * (nbr % radix);
+		stack[0] = base[(-1) * (nbr % radix)];
 		nbr = (nbr / radix) * (-1);
 		*i = 1;
+		return (nbr);
 	}
 	if (nbr < 0)
 	{
 		ft_putchar('-');
 		nbr = -nbr;
+		return (nbr);
+	}
+	if (nbr == 0)
+	{
+		ft_putchar('0');
 	}
 	return (nbr);
 }
 
-int			basecheck(char *base)
+int	base_check(char *base)
 {
-	unsigned int i;
-	unsigned int j;
+	unsigned int	i;
+	unsigned int	j;
 
 	if (ft_strlen(base) < 2)
 		return (0);
@@ -77,26 +83,26 @@ int			basecheck(char *base)
 	return (1);
 }
 
-void		ft_putnbr_base(int nbr, char *base)
+void	ft_putnbr_base(int nbr, char *base)
 {
-	int radix;
-	int stack[33];
-	int i;
+	char	stack[32];
+	int		radix;
+	int		i;
 
 	i = 0;
-	if (basecheck(base))
+	if (base_check(base))
 	{
 		radix = ft_strlen(base);
-		nbr = nbrcheck(nbr, base, stack, &i);
+		nbr = nbr_check(nbr, base, stack, &i);
 		while (nbr)
 		{
-			stack[i] = nbr % radix;
+			stack[i] = base[nbr % radix];
 			nbr /= radix;
 			i++;
 		}
 		while (i)
 		{
-			ft_putchar(base[stack[--i]]);
+			ft_putchar(stack[--i]);
 		}
 	}
 }

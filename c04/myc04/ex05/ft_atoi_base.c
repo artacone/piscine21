@@ -6,25 +6,25 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/25 23:22:03 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/26 00:18:49 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/17 00:36:11 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int			ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
-	unsigned int len;
+	char	*s;
 
-	len = 0;
-	while (str[len])
+	s = str;
+	while (*s)
 	{
-		len++;
+		s++;
 	}
-	return (len);
+	return (s - str);
 }
 
-int			ft_in_base(char c, char *base)
+int	ft_in_base(char c, char *base)
 {
-	unsigned int i;
+	int	i;
 
 	i = 0;
 	while (base[i])
@@ -38,19 +38,15 @@ int			ft_in_base(char c, char *base)
 	return (-1);
 }
 
-int			ft_is_space(char c)
+int	ft_is_space(char c)
 {
-	if (c == ' ' || (c >= '\t' && c <= '\r'))
-	{
-		return (1);
-	}
-	return (0);
+	return (c == ' ' || (c >= '\t' && c <= '\r'));
 }
 
-int			basecheck(char *base)
+int	base_check(char *base)
 {
-	unsigned int i;
-	unsigned int j;
+	unsigned int	i;
+	unsigned int	j;
 
 	if (ft_strlen(base) < 2)
 		return (0);
@@ -75,15 +71,15 @@ int			basecheck(char *base)
 	return (1);
 }
 
-int			ft_atoi_base(char *str, char *base)
+int	ft_atoi_base(char *str, char *base)
 {
-	int sign;
-	int res;
-	int radix;
+	int	sign;
+	int	res;
+	int	radix;
 
 	sign = 1;
 	res = 0;
-	if (basecheck(base))
+	if (base_check(base))
 	{
 		radix = ft_strlen(base);
 		while (ft_is_space(*str))

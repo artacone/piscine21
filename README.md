@@ -88,9 +88,9 @@ Contains materials from School 21's C Piscine.
 
 03 ft_atoi
 
-04 ft_putnbr_base
+04 ft_putnbr_base -- needs optimization
 
-05 ft_atoi_base
+05 ft_atoi_base -- bad taste
 
 ### c05
 ### c06
