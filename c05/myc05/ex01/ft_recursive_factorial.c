@@ -6,11 +6,11 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/26 12:29:34 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/26 12:33:46 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/17 00:40:43 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int			ft_recursive_factorial(int nb)
+int	ft_recursive_factorial(int nb)
 {
 	if (nb < 0)
 	{

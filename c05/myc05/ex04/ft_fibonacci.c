@@ -6,11 +6,11 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/26 12:59:38 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/26 13:04:31 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/17 00:44:29 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int			ft_fibonacci(int index)
+int	ft_fibonacci(int index)
 {
 	if (index < 0)
 	{
