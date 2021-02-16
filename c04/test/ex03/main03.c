@@ -6,7 +6,7 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/25 16:42:33 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/25 16:57:16 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/16 17:03:43 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int			ft_atoi(char *str);
 
 int			main(int argc, char* argv[])
 {
-	if (argc == 0)
+	if (argc != 2)
 	{
 		return (-1);
 	}
