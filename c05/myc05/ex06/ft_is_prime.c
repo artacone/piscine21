@@ -6,20 +6,20 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/26 13:30:48 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/26 13:41:55 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/17 01:46:24 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int			ft_is_prime(int nb)
+int	ft_is_prime(int nb)
 {
-	int i;
+	int	i;
 
-	i = 2;
 	if (nb < 2)
 	{
 		return (0);
 	}
-	while (i * i <= nb)
+	i = 2;
+	while (i < nb)
 	{
 		if (nb % i == 0)
 		{
