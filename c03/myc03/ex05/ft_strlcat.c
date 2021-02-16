@@ -6,49 +6,47 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/24 20:39:09 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/24 20:53:35 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/16 03:24:37 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int				ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
-	unsigned int len;
+	char	*s;
 
-	len = 0;
-	while (str[len])
+	s = str;
+	while (*s)
 	{
-		len++;
+		s++;
 	}
-	return (len);
-}
-
-unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
-{
-	unsigned int i;
-
-	i = 0;
-	if (size == 0)
-	{
-		return (ft_strlen(src));
-	}
-	while (i < (size - 1) && src[i])
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
-	return (ft_strlen(src));
+	return (s - str);
 }
 
 unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 {
-	unsigned int destlen;
+	char			*d;
+	char			*s;
+	unsigned int	n;
+	unsigned int	dlen;
 
-	destlen = ft_strlen(dest);
-	if (size == 0 || destlen > size)
+	d = dest;
+	s = src;
+	n = size;
+	while (n-- != 0 && *d != '\0')
+		d++;
+	dlen = d - dest;
+	n = size - dlen;
+	if (n == 0)
+		return (dlen + ft_strlen(s));
+	while (*s != '\0')
 	{
-		return (size + ft_strlen(src));
+		if (n != 1)
+		{
+			*d++ = *s;
+			n--;
+		}
+		s++;
 	}
-	ft_strlcpy(dest + destlen, src, size - destlen);
-	return (destlen + ft_strlen(src));
+	*d = '\0';
+	return (dlen + (s - src));
 }
