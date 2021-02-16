@@ -6,22 +6,32 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/26 13:11:08 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/26 13:25:39 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/17 01:37:47 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int			ft_sqrt(int nb)
+int	ft_sqrt(int nb)
 {
-	int res;
+	int				res;
+	unsigned int	start;
+	unsigned int	end;
+	unsigned long	mid;
 
 	res = 0;
-	while (res <= nb / 2 + 1)
+	start = 0;
+	end = nb / 2 + 1;
+	while (start <= end)
 	{
-		if (res * res == nb)
+		mid = (start + end) / 2;
+		if (mid * mid == (unsigned long)nb)
 		{
-			return (res);
+			res = mid;
+			break ;
 		}
-		res++;
+		if (mid * mid < (unsigned long)nb)
+			start = mid + 1;
+		else
+			end = mid - 1;
 	}
-	return (0);
+	return (res);
 }
