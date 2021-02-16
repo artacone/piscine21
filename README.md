@@ -16,7 +16,7 @@ Contains materials from School 21's C Piscine.
 
 06 ft_print_comb2
 
-07 ft_putnbr
+07 ft_putnbr -- needs optimization
 
 08 ft_print_combn -- KO
 
@@ -67,6 +67,18 @@ Contains materials from School 21's C Piscine.
 12 ft_print_memory
 
 ### c03
+00 ft_strcmp
+
+01 ft_strncmp
+
+02 ft_strcat
+
+03 ft_strncat
+
+04 ft_strstr -- needs optimization
+
+05 ft_strlcat -- needs testing
+
 ### c04
 ### c05
 ### c06
