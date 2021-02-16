@@ -80,6 +80,18 @@ Contains materials from School 21's C Piscine.
 05 ft_strlcat -- needs testing
 
 ### c04
+00 ft_strlen
+
+01 ft_putstr
+
+02 ft_putnbr -- needs optimization
+
+03 ft_atoi
+
+04 ft_putnbr_base
+
+05 ft_atoi_base
+
 ### c05
 ### c06
 ### c07

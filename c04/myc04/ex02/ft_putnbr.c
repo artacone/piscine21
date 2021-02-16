@@ -6,37 +6,55 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/25 14:19:40 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/25 14:22:59 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/16 03:35:18 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void		ft_putchar(char c)
+void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
 
-void		ft_putnbr(int nb)
+int	nbr_check(int nbr, char *stack, int *i)
 {
-	if (nb == -2147483648)
+	if (nbr == -2147483648)
 	{
 		ft_putchar('-');
-		ft_putchar('2');
-		nb = 147483648;
+		stack[0] = (-1) * (nbr % 10) + '0';
+		nbr = (nbr / 10) * (-1);
+		*i = 1;
+		return (nbr);
 	}
-	if (nb < 0)
+	if (nbr < 0)
 	{
 		ft_putchar('-');
-		nb = -nb;
+		nbr = -nbr;
+		return (nbr);
 	}
-	if (nb < 10)
+	if (nbr == 0)
 	{
-		ft_putchar(nb + '0');
+		ft_putchar('0');
 	}
-	else
+	return (nbr);
+}
+
+void	ft_putnbr(int nbr)
+{
+	char	stack[10];
+	int		i;
+
+	i = 0;
+	nbr = nbr_check(nbr, stack, &i);
+	while (nbr)
 	{
-		ft_putnbr(nb / 10);
-		ft_putchar(nb % 10 + '0');
+		stack[i] = (nbr % 10) + '0';
+		nbr /= 10;
+		i++;
+	}
+	while (i)
+	{
+		ft_putchar(stack[--i]);
 	}
 }
