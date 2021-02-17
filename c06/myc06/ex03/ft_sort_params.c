@@ -6,7 +6,7 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/27 13:20:11 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/17 03:21:52 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/17 03:23:44 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ void	ft_sort_str(char *strarr[], int size)
 {
 	int		i;
 	int		j;
-	int		flag;
+	char	flag;
 	char	*temp;
 
 	i = 0;
@@ -69,7 +69,7 @@ void	ft_sort_str(char *strarr[], int size)
 			}
 			j++;
 		}
-		if (!flag)
+		if (flag == 0)
 			break ;
 		i++;
 	}
