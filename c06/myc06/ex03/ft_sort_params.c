@@ -6,46 +6,47 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/27 13:20:11 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/27 15:41:33 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/17 03:21:52 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void		ft_putchar(char c)
+int	ft_strlen(char *str)
 {
-	write(1, &c, 1);
-}
+	char	*s;
 
-void		ft_putstr(char *str)
-{
-	unsigned int i;
-
-	i = 0;
-	while (str[i])
+	s = str;
+	while (*s)
 	{
-		ft_putchar(str[i]);
-		i++;
+		s++;
 	}
+	return (s - str);
 }
 
-int			ft_strcmp(char *s1, char *s2)
+void	ft_putstr(char *str)
 {
-	unsigned int i;
+	write(1, str, ft_strlen(str));
+}
 
-	i = 0;
-	while (s1[i])
+int	ft_strcmp(char *s1, char *s2)
+{
+	char	*str1;
+	char	*str2;
+
+	str1 = s1;
+	str2 = s2;
+	while (*str1 == *str2++)
 	{
-		if (s1[i] != s2[i])
+		if (*str1++ == '\0')
 		{
-			return (s1[i] - s2[i]);
+			return (0);
 		}
-		i++;
 	}
-	return (s1[i] - s2[i]);
+	return (*(unsigned char *)str1 - *(unsigned char *)(str2 - 1));
 }
 
-void		ft_sort_str(char *strarr[], int size)
+void	ft_sort_str(char *strarr[], int size)
 {
 	int		i;
 	int		j;
@@ -74,9 +75,9 @@ void		ft_sort_str(char *strarr[], int size)
 	}
 }
 
-int			main(int argc, char *argv[])
+int	main(int argc, char *argv[])
 {
-	int i;
+	int	i;
 
 	i = 1;
 	if (argc < 1)
@@ -87,7 +88,7 @@ int			main(int argc, char *argv[])
 	while (i < argc)
 	{
 		ft_putstr(argv[i]);
-		ft_putchar('\n');
+		write(1, "\n", 1);
 		i++;
 	}
 	return (0);
