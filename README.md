@@ -93,6 +93,24 @@ Contains materials from School 21's C Piscine.
 05 ft_atoi_base -- bad taste
 
 ### c05
+00 ft_iterative_factorial
+
+01 ft_recursive_factorial
+
+02 ft_itertive_power
+
+03 ft_recursive_power
+
+04 ft_fibonacci
+
+05 ft_sqrt
+
+06 ft_is_prime -- can be improved with hacks
+
+07 ft_find_next_prime
+
+08 ft_ten_queens_puzzle
+
 ### c06
 ### c07
 ### c08

@@ -6,27 +6,22 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/26 13:56:03 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/26 18:14:56 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/17 03:06:23 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void		ft_putchar(char c)
+int	is_possible(char *board, int file, int rank)
 {
-	write(1, &c, 1);
-}
-
-int			is_possible(int *board, int file, int rank)
-{
-	int i;
+	int	i;
 
 	i = 0;
 	while (i < file)
 	{
-		if (rank == board[i]
-				|| rank + file == board[i] + i
-				|| rank - file == board[i] - i)
+		if (rank == board[i] - '0'
+			|| rank + file == board[i] - '0' + i
+			|| rank - file == board[i] - '0' - i)
 		{
 			return (0);
 		}
@@ -35,25 +30,17 @@ int			is_possible(int *board, int file, int rank)
 	return (1);
 }
 
-void		print_result(int *board)
+void	print_result(char *board)
 {
-	int i;
-
-	i = 0;
-	while (i < 10)
-	{
-		ft_putchar(board[i] + '0');
-		i++;
-	}
-	ft_putchar('\n');
+	write(1, board, 11);
 }
 
-void		queen_backtracking(int file, int *board, int *placements)
+void	queen_backtracking(int file, char *board, int *placements)
 {
-	board[file] = 0;
-	while (board[file] < 10)
+	board[file] = '0';
+	while (board[file] <= '9')
 	{
-		if (is_possible(board, file, board[file]))
+		if (is_possible(board, file, board[file] - '0'))
 		{
 			if (file == 9)
 			{
@@ -69,12 +56,13 @@ void		queen_backtracking(int file, int *board, int *placements)
 	}
 }
 
-int			ft_ten_queens_puzzle(void)
+int	ft_ten_queens_puzzle(void)
 {
-	int board[10];
-	int placements;
+	char	board[11];
+	int		placements;
 
 	placements = 0;
+	board[10] = '\n';
 	queen_backtracking(0, board, &placements);
 	return (placements);
 }
