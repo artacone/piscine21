@@ -6,45 +6,46 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/28 16:09:36 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/28 20:14:34 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/20 00:37:39 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int			ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
-	unsigned int len;
+	char	*s;
 
-	len = 0;
-	while (str[len])
+	s = str;
+	while (*s)
 	{
-		len++;
+		s++;
 	}
-	return (len);
+	return (s - str);
 }
 
-char		*ft_strcpy(char *dest, char *src)
+char	*ft_strcpy(char *dest, char *src)
 {
-	unsigned int i;
+	char	*d;
+	char	*s;
 
-	i = 0;
-	while (src[i])
+	d = dest;
+	s = src;
+	while (*s)
 	{
-		dest[i] = src[i];
-		i++;
+		*d++ = *s++;
 	}
-	dest[i] = '\0';
+	*d = '\0';
 	return (dest);
 }
 
-char		*ft_strcat(char *dest, char *src)
+char	*ft_strcat(char *dest, char *src)
 {
 	ft_strcpy(dest + ft_strlen(dest), src);
 	return (dest);
 }
 
-char		*ft_strjoin(int size, char **strs, char *sep)
+char	*ft_strjoin(int size, char **strs, char *sep)
 {
 	char	*res;
 	int		i;
@@ -52,15 +53,16 @@ char		*ft_strjoin(int size, char **strs, char *sep)
 
 	i = 0;
 	reslen = 0;
-	while (i < size)
+	if (size > 0)
 	{
-		reslen += ft_strlen(strs[i++]);
+		while (i < size)
+		{
+			reslen += ft_strlen(strs[i++]);
+		}
+		reslen += (size - 1) * ft_strlen(sep);
 	}
-	reslen += (size - 1) * ft_strlen(sep);
-	if (!(res = (char*)malloc(sizeof(char) * (reslen + 1))))
-	{
-		return (res);
-	}
+	if ((res = (char *)malloc(reslen + 1)) == NULL)
+		return (NULL);
 	i = 0;
 	res[0] = '\0';
 	while (i < size)
