@@ -6,38 +6,48 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/28 13:43:54 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/28 16:08:27 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/20 00:20:23 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int			ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
-	int len;
+	char	*s;
 
-	len = 0;
-	while (str[len])
+	s = str;
+	while (*s)
 	{
-		len++;
+		s++;
 	}
-	return (len);
+	return (s - str);
 }
 
-char		*ft_strdup(char *src)
+char	*ft_strcpy(char *dest, char *src)
+{
+	char	*d;
+	char	*s;
+
+	d = dest;
+	s = src;
+	while (*s)
+	{
+		*d++ = *s++;
+	}
+	*d = '\0';
+	return (dest);
+}
+
+char	*ft_strdup(char *src)
 {
 	char	*dest;
-	int		srclen;
+	int		len;
 
-	srclen = ft_strlen(src);
-	if (!(dest = (char*)malloc(sizeof(char) * (srclen + 1))))
+	len = ft_strlen(src) + 1;
+	if ((dest = (char *)malloc(len)) == NULL)
 	{
-		return (dest);
+		return (NULL);
 	}
-	while (srclen >= 0)
-	{
-		dest[srclen] = src[srclen];
-		srclen--;
-	}
-	return (dest);
+	return (ft_strcpy(dest, src));
 }
