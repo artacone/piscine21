@@ -6,22 +6,22 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/28 15:38:35 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/28 16:08:33 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/20 00:22:15 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int			*ft_range(int min, int max)
+int	*ft_range(int min, int max)
 {
 	int	*range;
-	int i;
+	int	i;
 
 	if (min >= max)
 	{
 		return (NULL);
 	}
-	if (!(range = (int*)malloc(sizeof(int) * (max - min))))
+	if (!(range = (int *)malloc(sizeof(int) * (max - min))))
 	{
 		return (range);
 	}
