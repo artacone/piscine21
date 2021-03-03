@@ -134,19 +134,25 @@ Contains materials from School 21's C Piscine.
 05 ft_split -- stupid task not done
 
 ### c08
-00 ft.h
+00 ft
 
-01 ft_boolean.h
+01 ft_boolean
 
-02 ft_abs.h
+02 ft_abs
 
-03 ft_point.h
+03 ft_point
 
-04 ft_strs_to_tab.c
+04 ft_strs_to_tab
 
-05 ft_show_tab.c
+05 ft_show_tab
 
 ### c09
+00 libft
+
+01 Makefile -- incorrect according to Moulinette but actually correct
+
+02 ft_split -- not my implemetation
+
 ### c10
 ### c11
 ### c12
