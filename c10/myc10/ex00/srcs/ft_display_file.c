@@ -6,13 +6,13 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/01 22:45:56 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/02 11:54:23 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/03/03 15:30:18 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft.h"
 
-void		ft_display_file(char *file_name)
+void	ft_display_file(char *file_name)
 {
 	int		fd;
 	char	buffer[BUFF_SIZE];

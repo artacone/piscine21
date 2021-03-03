@@ -6,13 +6,13 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/01 22:43:45 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/02 13:14:52 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/03/03 15:29:38 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft.h"
 
-int			main(int argc, char *argv[])
+int	main(int argc, char *argv[])
 {
 	if (argc > 2)
 	{
@@ -22,7 +22,7 @@ int			main(int argc, char *argv[])
 	if (argc < 2)
 	{
 		ft_print_error("File name missing.\n");
-		return (1);
+		return (2);
 	}
 	ft_display_file(argv[1]);
 	return (0);

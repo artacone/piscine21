@@ -6,20 +6,13 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/02 11:46:14 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/02 11:48:51 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/03/03 15:28:04 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft.h"
 
-void		ft_print_error(char *str)
+void	ft_print_error(char *str)
 {
-	unsigned int i;
-
-	i = 0;
-	while (str[i])
-	{
-		write(2, str + i, 1);
-		i++;
-	}
+	write(2, str, ft_strlen(str));
 }
