@@ -6,22 +6,23 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/30 13:36:45 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/30 13:37:15 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/03/03 15:12:29 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int			ft_strcmp(char *s1, char *s2)
+int	ft_strcmp(char *s1, char *s2)
 {
-	unsigned int i;
+	char	*str1;
+	char	*str2;
 
-	i = 0;
-	while (s1[i])
+	str1 = s1;
+	str2 = s2;
+	while (*str1 == *str2++)
 	{
-		if (s1[i] != s2[i])
+		if (*str1++ == '\0')
 		{
-			return (s1[i] - s2[i]);
+			return (0);
 		}
-		i++;
 	}
-	return (s1[i] - s2[i]);
+	return (*(unsigned char *)str1 - *(unsigned char *)(str2 - 1));
 }

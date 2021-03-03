@@ -6,13 +6,13 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/30 13:32:09 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/30 13:32:33 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/03/03 15:10:32 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void		ft_putchar(char c)
+void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }

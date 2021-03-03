@@ -6,20 +6,25 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/30 13:33:26 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/31 13:33:50 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/03/03 15:14:22 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void		ft_putchar(char c);
+#include <unistd.h>
 
-void		ft_putstr(char *str)
+int	ft_strlen(char *str)
 {
-	unsigned int i;
+	char	*s;
 
-	i = 0;
-	while (str[i])
+	s = str;
+	while (*s)
 	{
-		ft_putchar(str[i]);
-		i++;
+		s++;
 	}
+	return (s - str);
+}
+
+void	ft_putstr(char *str)
+{
+	write(1, str, ft_strlen(str));
 }
