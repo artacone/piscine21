@@ -6,41 +6,51 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/29 23:03:59 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/30 13:24:05 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/03/03 14:21:24 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "ft_stock_str.h"
 
-int					ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
-	int len;
+	char	*s;
 
-	len = 0;
-	while (str[len])
+	s = str;
+	while (*s)
 	{
-		len++;
+		s++;
 	}
-	return (len);
+	return (s - str);
 }
 
-char				*ft_strdup(char *src)
+char	*ft_strcpy(char *dest, char *src)
+{
+	char	*d;
+	char	*s;
+
+	d = dest;
+	s = src;
+	while (*s)
+	{
+		*d++ = *s++;
+	}
+	*d = '\0';
+	return (dest);
+}
+
+char	*ft_strdup(char *src)
 {
 	char	*dest;
-	int		srclen;
+	int		len;
 
-	srclen = ft_strlen(src);
-	if (!(dest = (char*)malloc(sizeof(char) * (srclen + 1))))
+	len = ft_strlen(src) + 1;
+	if ((dest = (char *)malloc(len)) == NULL)
 	{
-		return (dest);
+		return (NULL);
 	}
-	while (srclen >= 0)
-	{
-		dest[srclen] = src[srclen];
-		srclen--;
-	}
-	return (dest);
+	return (ft_strcpy(dest, src));
 }
 
 struct s_stock_str	*ft_strs_to_tab(int ac, char **av)
@@ -50,13 +60,13 @@ struct s_stock_str	*ft_strs_to_tab(int ac, char **av)
 
 	i = 0;
 	stock = (struct s_stock_str*)malloc(sizeof(struct s_stock_str) * (ac + 1));
-	if (!(stock))
-		return (stock);
+	if (stock == NULL)
+		return (NULL);
 	while (i < ac)
 	{
 		stock[i].size = ft_strlen(av[i]);
 		stock[i].str = av[i];
-		if (!(stock[i].copy = ft_strdup(av[i])))
+		if ((stock[i].copy = ft_strdup(av[i])) == NULL)
 		{
 			while (i > 0)
 			{

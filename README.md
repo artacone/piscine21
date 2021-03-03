@@ -112,8 +112,40 @@ Contains materials from School 21's C Piscine.
 08 ft_ten_queens_puzzle
 
 ### c06
+00 ft_print_program_name
+
+01 ft_print_params
+
+02 ft_rev_params
+
+03 ft_sort_params
+
 ### c07
+00 ft_strdup
+
+01 ft_range
+
+02 ft_ultimate_range
+
+03 ft_strjoin
+
+04 ft_convert_base
+
+05 ft_split -- stupid task not done
+
 ### c08
+00 ft.h
+
+01 ft_boolean.h
+
+02 ft_abs.h
+
+03 ft_point.h
+
+04 ft_strs_to_tab.c
+
+05 ft_show_tab.c
+
 ### c09
 ### c10
 ### c11

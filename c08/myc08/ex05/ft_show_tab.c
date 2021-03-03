@@ -6,57 +6,80 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/29 23:28:47 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/30 00:23:13 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/03/03 14:56:28 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include "ft_stock_str.h"
 
-void		ft_putchar(char c)
+void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
 
-void		ft_putstr(char *str)
+int	ft_strlen(char *str)
 {
-	unsigned int i;
+	char	*s;
+
+	s = str;
+	while (*s)
+	{
+		s++;
+	}
+	return (s - str);
+}
+
+void	ft_putstr(char *str)
+{
+	write(1, str, ft_strlen(str));
+}
+
+int	nbr_check(int nbr, char *stack, int *i)
+{
+	if (nbr == -2147483648)
+	{
+		ft_putchar('-');
+		stack[0] = (-1) * (nbr % 10) + '0';
+		nbr = (nbr / 10) * (-1);
+		*i = 1;
+		return (nbr);
+	}
+	if (nbr < 0)
+	{
+		ft_putchar('-');
+		nbr = -nbr;
+		return (nbr);
+	}
+	if (nbr == 0)
+	{
+		ft_putchar('0');
+	}
+	return (nbr);
+}
+
+void	ft_putnbr(int nbr)
+{
+	char	stack[10];
+	int		i;
 
 	i = 0;
-	while (str[i])
+	nbr = nbr_check(nbr, stack, &i);
+	while (nbr)
 	{
-		ft_putchar(str[i]);
+		stack[i] = (nbr % 10) + '0';
+		nbr /= 10;
 		i++;
 	}
-}
-
-void		ft_putnbr(int nb)
-{
-	if (nb == -2147483648)
+	while (i)
 	{
-		ft_putchar('-');
-		ft_putchar('2');
-		nb = 147483648;
-	}
-	if (nb < 0)
-	{
-		ft_putchar('-');
-		nb = -nb;
-	}
-	if (nb < 10)
-	{
-		ft_putchar(nb + '0');
-	}
-	else
-	{
-		ft_putnbr(nb / 10);
-		ft_putchar(nb % 10 + '0');
+		ft_putchar(stack[--i]);
 	}
 }
 
-void		ft_show_tab(struct s_stock_str *par)
+void	ft_show_tab(struct s_stock_str *par)
 {
-	unsigned int i;
+	unsigned int	i;
 
 	i = 0;
 	while (par[i].str)

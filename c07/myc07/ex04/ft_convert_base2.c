@@ -6,34 +6,30 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/28 23:33:29 by rvertie           #+#    #+#             */
-/*   Updated: 2021/01/28 23:55:53 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/02/20 00:46:36 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int			ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
-	unsigned int len;
+	char	*s;
 
-	len = 0;
-	while (str[len])
+	s = str;
+	while (*s)
 	{
-		len++;
+		s++;
 	}
-	return (len);
+	return (s - str);
 }
 
-int			ft_is_space(char c)
+int	ft_is_space(char c)
 {
-	if (c == ' ' || (c >= '\t' && c <= '\r'))
-	{
-		return (1);
-	}
-	return (0);
+	return (c == ' ' || (c >= '\t' && c <= '\r'));
 }
 
-int			ft_in_base(char c, char *base)
+int	ft_in_base(char c, char *base)
 {
-	unsigned int i;
+	int	i;
 
 	i = 0;
 	while (base[i])
