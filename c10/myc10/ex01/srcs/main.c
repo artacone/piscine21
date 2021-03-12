@@ -6,15 +6,17 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/01 22:43:45 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/02 19:19:02 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/03/04 18:35:56 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft.h"
 
-int			main(int argc, char *argv[])
+char	*g_progname;
+
+int	main(int argc, char *argv[])
 {
-	int i;
+	int	i;
 
 	if (argc == 1)
 	{

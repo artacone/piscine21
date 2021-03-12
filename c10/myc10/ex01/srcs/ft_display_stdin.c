@@ -6,13 +6,13 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/02 18:07:27 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/02 19:17:41 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/03/03 17:31:54 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft.h"
 
-void		ft_display_stdin(void)
+void	ft_display_stdin(void)
 {
 	char	buffer[BUFF_SIZE];
 	int		size_read;
