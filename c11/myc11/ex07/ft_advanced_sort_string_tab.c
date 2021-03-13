@@ -6,13 +6,13 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/03 20:43:04 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/03 20:47:12 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/03/13 18:55:14 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int			ft_size(char **tab)
+int	ft_size(char **tab)
 {
-	int size;
+	int	size;
 
 	size = 0;
 	while (tab[size])
@@ -22,21 +22,21 @@ int			ft_size(char **tab)
 	return (size);
 }
 
-void		ft_swap(char **l, char **r)
+void	ft_swap(char **l, char **r)
 {
-	char *temp;
+	char	*tmp;
 
-	temp = *l;
+	tmp = *l;
 	*l = *r;
-	*r = temp;
+	*r = tmp;
 }
 
-void		ft_advanced_sort_string_tab(char **tab, int (*cmp)(char *, char *))
+void	ft_advanced_sort_string_tab(char **tab, int (*cmp)(char *, char *))
 {
-	int		i;
-	int		j;
-	int		flag;
-	int		size;
+	int	i;
+	int	j;
+	int	flag;
+	int	size;
 
 	i = 0;
 	size = ft_size(tab);
@@ -53,7 +53,7 @@ void		ft_advanced_sort_string_tab(char **tab, int (*cmp)(char *, char *))
 			}
 			j++;
 		}
-		if (!flag)
+		if (flag == 0)
 			break ;
 		i++;
 	}
