@@ -6,13 +6,13 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/02 23:59:38 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/03 00:05:32 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/03/13 18:25:59 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int			ft_any(char **tab, int (*f)(char*))
+int	ft_any(char **tab, int (*f)(char*))
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (tab[i])

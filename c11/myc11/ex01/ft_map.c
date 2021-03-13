@@ -6,20 +6,20 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/02 22:04:48 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/02 23:58:23 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/03/13 18:25:26 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int			*ft_map(int *tab, int length, int (*f)(int))
+int	*ft_map(int *tab, int length, int (*f)(int))
 {
-	int *res;
-	int i;
+	int	*res;
+	int	i;
 
-	if (!(res = (int*)malloc(sizeof(int) * length)))
+	if ((res = (int *)malloc(sizeof(int) * length)) == NULL)
 	{
-		return (res);
+		return (NULL);
 	}
 	i = 0;
 	while (i < length)
