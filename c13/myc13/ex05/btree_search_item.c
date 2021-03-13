@@ -6,17 +6,17 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/05 22:24:28 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/05 23:34:42 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/03/14 01:04:12 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_btree.h"
 
-void		*btree_search_item(t_btree *root,
+void	*btree_search_item(t_btree *root,
 							void *data_ref,
 							int (*cmpf)(void *, void *))
 {
-	void *to_find;
+	void	*to_find;
 
 	if (root == NULL)
 	{

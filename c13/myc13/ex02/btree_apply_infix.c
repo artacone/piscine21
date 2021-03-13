@@ -6,13 +6,13 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/05 21:46:42 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/05 22:01:09 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/03/14 00:10:18 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_btree.h"
 
-void		btree_apply_infix(t_btree *root, void (*applyf)(void *))
+void	btree_apply_infix(t_btree *root, void (*applyf)(void *))
 {
 	if (root)
 	{

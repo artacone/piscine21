@@ -6,13 +6,13 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/05 22:09:21 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/05 22:22:45 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/03/14 00:12:43 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_btree.h"
 
-void		btree_insert_data(t_btree **root,
+void	btree_insert_data(t_btree **root,
 							void *item,
 							int (*cmpf)(void *, void *))
 {

@@ -6,7 +6,7 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/05 00:05:01 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/05 22:08:56 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/03/14 00:12:27 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 # include <stdlib.h>
 
-typedef struct		s_btree
+typedef struct s_btree
 {
 	struct s_btree	*left;
 	struct s_btree	*right;

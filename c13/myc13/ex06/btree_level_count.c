@@ -6,16 +6,16 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/05 22:50:21 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/05 23:02:29 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/03/14 01:06:51 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_btree.h"
 
-int			btree_level_count(t_btree *root)
+int	btree_level_count(t_btree *root)
 {
-	int ldepth;
-	int rdepth;
+	int	ldepth;
+	int	rdepth;
 
 	if (root)
 	{
