@@ -6,18 +6,18 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/03 00:12:42 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/03 00:16:51 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/03/13 18:29:24 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int			ft_count_if(char **tab, int length, int (*f)(char*))
+int	ft_count_if(char **tab, int length, int (*f)(char*))
 {
-	int count;
-	int i;
+	int	count;
+	int	i;
 
 	count = 0;
 	i = 0;
-	while (tab[i])
+	while (i < length)
 	{
 		if (f(tab[i]))
 		{
