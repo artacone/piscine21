@@ -6,15 +6,15 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/03 23:57:32 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/04 00:08:46 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/03/13 19:13:58 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_list.h"
 
-t_list			*ft_list_last(t_list *begin_list)
+t_list	*ft_list_last(t_list *begin_list)
 {
-	t_list *tmp;
+	t_list	*tmp;
 
 	tmp = begin_list;
 	if (tmp)

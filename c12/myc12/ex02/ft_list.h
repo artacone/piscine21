@@ -6,7 +6,7 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/03 22:59:59 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/03 23:37:46 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/03/13 19:07:31 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 # include <stdlib.h>
 
-typedef struct		s_list
+typedef struct s_list
 {
 	struct s_list	*next;
 	void			*data;

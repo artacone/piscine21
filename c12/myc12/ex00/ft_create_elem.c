@@ -6,7 +6,7 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/03 23:03:00 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/14 19:45:26 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/03/13 19:03:54 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ t_list	*ft_create_elem(void *data)
 {
 	t_list	*new;
 
-	new = (t_list*)malloc(sizeof(t_list));
+	new = (t_list *)malloc(sizeof(t_list));
 	if (new)
 	{
 		new->next = NULL;
