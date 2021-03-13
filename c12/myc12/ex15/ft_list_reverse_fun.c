@@ -6,7 +6,7 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/04 23:23:46 by rvertie           #+#    #+#             */
-/*   Updated: 2021/03/13 23:05:01 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/03/13 23:28:33 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,21 @@
 
 t_list	*reverse(t_list **head_ref)
 {
-    t_list	*prev;
-    t_list	*current;
-    t_list	*next;
+	t_list	*prev;
+	t_list	*current;
+	t_list	*next;
 
 	prev = NULL;
 	current = *head_ref;
 	next = NULL;
-    while (current != NULL)
+	while (current != NULL)
 	{
-        next = current->next;
-        current->next = prev;
-        prev = current;
-        current = next;
-    }
-    *head_ref = prev;
+		next = current->next;
+		current->next = prev;
+		prev = current;
+		current = next;
+	}
+	*head_ref = prev;
 }
 /*
 t_list	*reverse(t_list *head)
