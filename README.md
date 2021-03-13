@@ -154,6 +154,66 @@ Contains materials from School 21's C Piscine.
 02 ft_split -- not my implemetation
 
 ### c10
+00 display_file
+
+01 cat
+
+02 tail -- it's garbage without lseek, so anyway
+
+03 hexdump -- not done
+
 ### c11
+00 ft_foreach
+
+01 ft_map
+
+02 ft_any
+
+03 ft_count_if
+
+04 ft_is_sort -- moulinette thinks that {5, 4, 3, 2, 1} is sorted (I don't)
+
+05 do-op
+
+06 ft_sort_string_tab
+
+07 ft_advanced_sort_string
+
 ### c12
+00 ft_create_elem
+
+01 ft_list_push_front
+
+02 ft_list_size
+
+03 ft_list_last
+
+04 ft_list_push_back
+
+05 ft_list_push_strs
+
+06 ft_list_clear
+
+07 ft_list_at
+
+08 ft_list_reverse
+
+09 ft_list_foreach
+
+10 ft_list_foreach_if
+
+11 ft_list_find
+
+12 ft_list_remove_if
+
+13 ft_list_merge
+
+14 ft_list_sort
+
+15 ft_list_reverse_fun
+
+16 ft_sorted_list_insert
+
+17 ft_sorted_list_merge
+
 ### c13
