@@ -6,13 +6,13 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/03 00:24:35 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/03 15:38:24 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/03/13 18:32:39 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int			ft_is_sort(int *tab, int length, int (*f)(int, int))
+int	ft_is_sort(int *tab, int length, int (*f)(int, int))
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i < length - 1)

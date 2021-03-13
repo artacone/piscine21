@@ -6,7 +6,7 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/03 15:48:38 by rvertie           #+#    #+#             */
-/*   Updated: 2021/03/13 18:41:08 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/03/13 18:49:59 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ int	main(int argc, char *argv[])
 	else
 	{
 		if (ft_strcmp(argv[2], "+") && ft_strcmp(argv[2], "-")
-				&& ft_strcmp(argv[2], "/") && ft_strcmp(argv[2], "*")
-				&& ft_strcmp(argv[2], "%"))
+			&& ft_strcmp(argv[2], "/") && ft_strcmp(argv[2], "*")
+			&& ft_strcmp(argv[2], "%"))
 		{
 			ft_putstr("0\n");
 			return (0);

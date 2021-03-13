@@ -6,11 +6,11 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/03 20:15:01 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/03 20:41:05 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/03/13 18:49:13 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int			ft_strcmp(char *s1, char *s2)
+int	ft_strcmp(char *s1, char *s2)
 {
 	unsigned int i;
 
