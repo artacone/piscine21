@@ -217,3 +217,18 @@ Contains materials from School 21's C Piscine.
 17 ft_sorted_list_merge
 
 ### c13
+00 btree_create_node
+
+01 btree_apply_prefix
+
+02 btree_apply_infix
+
+03 btree_apply_suffix
+
+04 btree_insert_data
+
+05 btree_search_item
+
+06 btree_level_count
+
+07 btree_apply_by_level -- not done
