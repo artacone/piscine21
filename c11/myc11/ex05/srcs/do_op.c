@@ -6,13 +6,13 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/03 16:08:59 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/03 19:47:24 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/03/13 18:38:29 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft.h"
 
-int			op_check(char op, int rvalue)
+int	op_check(char op, int rvalue)
 {
 	if (op == '/' && rvalue == 0)
 	{
@@ -27,7 +27,7 @@ int			op_check(char op, int rvalue)
 	return (1);
 }
 
-void		do_op(int lvalue, char op, int rvalue)
+void	do_op(int lvalue, char op, int rvalue)
 {
 	int (*ops[11])(int, int);
 

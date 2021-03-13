@@ -5,25 +5,24 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/30 13:36:45 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/01 23:12:11 by rvertie          ###   ########.fr       */
+/*   Created: 2021/01/24 17:08:25 by rvertie           #+#    #+#             */
+/*   Updated: 2021/02/15 21:38:17 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft.h"
-
-int			ft_strcmp(char *s1, char *s2)
+int	ft_strcmp(char *s1, char *s2)
 {
-	unsigned int i;
+	char	*str1;
+	char	*str2;
 
-	i = 0;
-	while (s1[i])
+	str1 = s1;
+	str2 = s2;
+	while (*str1 == *str2++)
 	{
-		if (s1[i] != s2[i])
+		if (*str1++ == '\0')
 		{
-			return (s1[i] - s2[i]);
+			return (0);
 		}
-		i++;
 	}
-	return (s1[i] - s2[i]);
+	return (*(unsigned char *)str1 - *(unsigned char *)(str2 - 1));
 }

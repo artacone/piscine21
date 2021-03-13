@@ -5,21 +5,26 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/30 13:33:26 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/01 23:12:12 by rvertie          ###   ########.fr       */
+/*   Created: 2021/01/25 14:17:31 by rvertie           #+#    #+#             */
+/*   Updated: 2021/03/13 18:44:39 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft.h"
 
-void		ft_putstr(char *str)
+int	ft_strlen(char *str)
 {
-	unsigned int i;
+	char	*s;
 
-	i = 0;
-	while (str[i])
+	s = str;
+	while (*s)
 	{
-		ft_putchar(str[i]);
-		i++;
+		s++;
 	}
+	return (s - str);
+}
+
+void	ft_putstr(char *str)
+{
+	write(1, str, ft_strlen(str));
 }

@@ -6,13 +6,13 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/03 15:48:38 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/03 20:09:46 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/03/13 18:41:08 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft.h"
 
-int			main(int argc, char *argv[])
+int	main(int argc, char *argv[])
 {
 	if (argc != 4)
 	{
