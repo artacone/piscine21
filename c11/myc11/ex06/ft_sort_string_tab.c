@@ -6,29 +6,30 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/03 20:15:01 by rvertie           #+#    #+#             */
-/*   Updated: 2021/03/13 18:49:13 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/03/13 18:54:10 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_strcmp(char *s1, char *s2)
 {
-	unsigned int i;
+	char	*str1;
+	char	*str2;
 
-	i = 0;
-	while (s1[i])
+	str1 = s1;
+	str2 = s2;
+	while (*str1 == *str2++)
 	{
-		if (s1[i] != s2[i])
+		if (*str1++ == '\0')
 		{
-			return (s1[i] - s2[i]);
+			return (0);
 		}
-		i++;
 	}
-	return (s1[i] - s2[i]);
+	return (*(unsigned char *)str1 - *(unsigned char *)(str2 - 1));
 }
 
-int			ft_size(char **tab)
+int	ft_size(char **tab)
 {
-	int size;
+	int	size;
 
 	size = 0;
 	while (tab[size])
@@ -38,21 +39,21 @@ int			ft_size(char **tab)
 	return (size);
 }
 
-void		ft_swap(char **l, char **r)
+void	ft_swap(char **l, char **r)
 {
-	char *temp;
+	char	*tmp;
 
-	temp = *l;
+	tmp = *l;
 	*l = *r;
-	*r = temp;
+	*r = tmp;
 }
 
-void		ft_sort_string_tab(char **tab)
+void	ft_sort_string_tab(char **tab)
 {
-	int		i;
-	int		j;
-	int		flag;
-	int		size;
+	int	i;
+	int	j;
+	int	flag;
+	int	size;
 
 	i = 0;
 	size = ft_size(tab);
@@ -69,7 +70,7 @@ void		ft_sort_string_tab(char **tab)
 			}
 			j++;
 		}
-		if (!flag)
+		if (flag == 0)
 			break ;
 		i++;
 	}
