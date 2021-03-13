@@ -6,13 +6,13 @@
 /*   By: rvertie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/04 17:12:36 by rvertie           #+#    #+#             */
-/*   Updated: 2021/02/04 17:19:08 by rvertie          ###   ########.fr       */
+/*   Updated: 2021/03/13 19:31:37 by rvertie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_list.h"
 
-t_list		*ft_list_at(t_list *begin_list, unsigned int nbr)
+t_list	*ft_list_at(t_list *begin_list, unsigned int nbr)
 {
 	unsigned int	i;
 	t_list			*tmp;
