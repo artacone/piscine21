@@ -12,15 +12,15 @@ Contains materials from School 21's C Piscine.
 
 03 [ft_print_numbers](https://github.com/artacone/piscine21/blob/main/c00/myc00/ex03)
 
-04 ft_is_negative(https://github.com/artacone/piscine21/blob/main/c00/myc00/ex00/ft_putchar.c)
+04 [ft_is_negative](https://github.com/artacone/piscine21/blob/main/c00/myc00/ex04)
 
-05 ft_print_comb(https://github.com/artacone/piscine21/blob/main/c00/myc00/ex00/ft_putchar.c)
+05 [ft_print_comb](https://github.com/artacone/piscine21/blob/main/c00/myc00/ex05)
 
-06 ft_print_comb2(https://github.com/artacone/piscine21/blob/main/c00/myc00/ex00/ft_putchar.c)
+06 [ft_print_comb2](https://github.com/artacone/piscine21/blob/main/c00/myc00/ex06)
 
-07 ft_putnbr(https://github.com/artacone/piscine21/blob/main/c00/myc00/ex00/ft_putchar.c) -- *needs optimization?*
+07 [ft_putnbr](https://github.com/artacone/piscine21/blob/main/c00/myc00/ex07) -- *needs optimization?*
 
-08 ft_print_combn(https://github.com/artacone/piscine21/blob/main/c00/myc00/ex00/ft_putchar.c) -- **KO**
+08 [ft_print_combn](https://github.com/artacone/piscine21/blob/main/c00/myc00/ex08) -- **KO**
 
 ### c01
 00 ft_ft
