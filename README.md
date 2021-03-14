@@ -25,26 +25,26 @@ Contains materials from School 21's C Piscine.
 - 08 [ft_print_combn](https://github.com/artacone/piscine21/blob/main/c00/myc00/ex08) -- **KO**
 
 ### c01
-00 ft_ft
+00 ft_ft(https://github.com/artacone/piscine21/tree/main/c01/myc01/ex00)
 
-01 ft_ultimate_ft
+01 ft_ultimate_ft(https://github.com/artacone/piscine21/tree/main/c01/myc01/ex00)
 
-02 ft_swap
+02 ft_swap(https://github.com/artacone/piscine21/tree/main/c01/myc01/ex00)
 
-03 ft_div_mod
+03 ft_div_mod(https://github.com/artacone/piscine21/tree/main/c01/myc01/ex00)
 
-04 ft_ultimate_div_mod
+04 ft_ultimate_div_mod(https://github.com/artacone/piscine21/tree/main/c01/myc01/ex00)
 
-05 ft_putstr
+05 ft_putstr(https://github.com/artacone/piscine21/tree/main/c01/myc01/ex00)
 
-06 ft_strlen
+06 ft_strlen(https://github.com/artacone/piscine21/tree/main/c01/myc01/ex00)
 
-07 ft_rev_int_tab
+07 ft_rev_int_tab(https://github.com/artacone/piscine21/tree/main/c01/myc01/ex00)
 
-08 ft_sort_int_tab
+08 ft_sort_int_tab(https://github.com/artacone/piscine21/tree/main/c01/myc01/ex00)
 
 ### c02
-00 ft_strcpy
+00 ft_strcpy(https://github.com/artacone/piscine21/tree/main/c02/myc02/ex00)
 
 01 ft_strncpy
 
