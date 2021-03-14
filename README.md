@@ -232,3 +232,9 @@ Contains materials from School 21's C Piscine.
 06 btree_level_count
 
 07 btree_apply_by_level -- not done
+
+| C00 | 00 01 02 03 04 05 06 07 08 | ft_putchar ft_print_alphabet ft_print_reverse_alphabet ft_print_numbers ft_is_negative ft_print_comb ft_print_comb2 ft_putnbr ft_print_combn | OK OK OK OK OK OK OK OK KO |   |
+|-----|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|---|
+|     |                            |                                                                                                                                              |                            |   |
+|     |                            |                                                                                                                                              |                            |   |
+|     |                            |                                                                                                                                              |                            |   |
