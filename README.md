@@ -71,7 +71,7 @@ Contains materials from School 21's C Piscine.
 12 ft_print_memory
 
 ### c03
-00 ft_strcmp
+00 ft_strcmp(https://github.com/artacone/piscine21/tree/main/c03/myc03/ex00)
 
 01 ft_strncmp
 
@@ -84,7 +84,7 @@ Contains materials from School 21's C Piscine.
 05 ft_strlcat -- needs testing
 
 ### c04
-00 ft_strlen
+00 ft_strlen(https://github.com/artacone/piscine21/tree/main/c04/myc04/ex00)
 
 01 ft_putstr
 
@@ -97,7 +97,7 @@ Contains materials from School 21's C Piscine.
 05 ft_atoi_base -- bad taste
 
 ### c05
-00 ft_iterative_factorial
+00 ft_iterative_factorial(https://github.com/artacone/piscine21/tree/main/c05/myc05/ex00)
 
 01 ft_recursive_factorial
 
@@ -116,7 +116,7 @@ Contains materials from School 21's C Piscine.
 08 ft_ten_queens_puzzle
 
 ### c06
-00 ft_print_program_name
+00 ft_print_program_name(https://github.com/artacone/piscine21/tree/main/c06/myc06/ex00)
 
 01 ft_print_params
 
@@ -125,7 +125,7 @@ Contains materials from School 21's C Piscine.
 03 ft_sort_params
 
 ### c07
-00 ft_strdup
+00 ft_strdup(https://github.com/artacone/piscine21/tree/main/c07/myc07/ex00)
 
 01 ft_range
 
@@ -138,7 +138,7 @@ Contains materials from School 21's C Piscine.
 05 ft_split -- stupid task not done
 
 ### c08
-00 ft
+00 ft(https://github.com/artacone/piscine21/tree/main/c08/myc08/ex00)
 
 01 ft_boolean
 
@@ -151,14 +151,14 @@ Contains materials from School 21's C Piscine.
 05 ft_show_tab
 
 ### c09
-00 libft
+00 libft(https://github.com/artacone/piscine21/tree/main/c09/myc09)
 
 01 Makefile -- incorrect according to Moulinette but actually correct
 
 02 ft_split -- not my implemetation
 
 ### c10
-00 display_file
+00 display_file(https://github.com/artacone/piscine21/tree/main/c10/myc10/ex00)
 
 01 cat
 
@@ -167,7 +167,7 @@ Contains materials from School 21's C Piscine.
 03 hexdump -- not done
 
 ### c11
-00 ft_foreach
+00 ft_foreach(https://github.com/artacone/piscine21/tree/main/c11/myc11/ex00)
 
 01 ft_map
 
@@ -184,7 +184,7 @@ Contains materials from School 21's C Piscine.
 07 ft_advanced_sort_string
 
 ### c12
-00 ft_create_elem
+00 ft_create_elem(https://github.com/artacone/piscine21/tree/main/c12/myc12/ex00)
 
 01 ft_list_push_front
 
@@ -221,7 +221,7 @@ Contains materials from School 21's C Piscine.
 17 ft_sorted_list_merge
 
 ### c13
-00 btree_create_node
+00 btree_create_node(https://github.com/artacone/piscine21/tree/main/c13/myc13/ex00)
 
 01 btree_apply_prefix
 
