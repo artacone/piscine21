@@ -1,26 +1,28 @@
 # Piscine21
 Contains materials from School 21's C Piscine.
 
+[TOC]
+
 ## C projects
 
 ### c00
-00 [ft_putchar](https://github.com/artacone/piscine21/blob/main/c00/myc00/ex00)
+- 00 [ft_putchar](https://github.com/artacone/piscine21/blob/main/c00/myc00/ex00)
 
-01 [ft_print_alphabet](https://github.com/artacone/piscine21/blob/main/c00/myc00/ex01)
+- 01 [ft_print_alphabet](https://github.com/artacone/piscine21/blob/main/c00/myc00/ex01)
 
-02 [ft_print_reverse_alphabet](https://github.com/artacone/piscine21/blob/main/c00/myc00/ex02)
+- 02 [ft_print_reverse_alphabet](https://github.com/artacone/piscine21/blob/main/c00/myc00/ex02)
 
-03 [ft_print_numbers](https://github.com/artacone/piscine21/blob/main/c00/myc00/ex03)
+- 03 [ft_print_numbers](https://github.com/artacone/piscine21/blob/main/c00/myc00/ex03)
 
-04 [ft_is_negative](https://github.com/artacone/piscine21/blob/main/c00/myc00/ex04)
+- 04 [ft_is_negative](https://github.com/artacone/piscine21/blob/main/c00/myc00/ex04)
 
-05 [ft_print_comb](https://github.com/artacone/piscine21/blob/main/c00/myc00/ex05)
+- 05 [ft_print_comb](https://github.com/artacone/piscine21/blob/main/c00/myc00/ex05)
 
-06 [ft_print_comb2](https://github.com/artacone/piscine21/blob/main/c00/myc00/ex06)
+- 06 [ft_print_comb2](https://github.com/artacone/piscine21/blob/main/c00/myc00/ex06)
 
-07 [ft_putnbr](https://github.com/artacone/piscine21/blob/main/c00/myc00/ex07) -- *needs optimization?*
+- 07 [ft_putnbr](https://github.com/artacone/piscine21/blob/main/c00/myc00/ex07) -- *needs optimization?*
 
-08 [ft_print_combn](https://github.com/artacone/piscine21/blob/main/c00/myc00/ex08) -- **KO**
+- 08 [ft_print_combn](https://github.com/artacone/piscine21/blob/main/c00/myc00/ex08) -- **KO**
 
 ### c01
 00 ft_ft
