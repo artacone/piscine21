@@ -1,24 +1,24 @@
-# piscine21
+# Piscine21
 Contains materials from School 21's C Piscine.
 
 ### c00
-00 ft_putchar
+00 ft_putchar(https://github.com/artacone/piscine21/blob/main/c00/myc00/ex00/ft_putchar.c)
 
-01 ft_print_alphabet
+01 ft_print_alphabet(https://github.com/artacone/piscine21/blob/main/c00/myc00/ex00/ft_putchar.c)
 
-02 ft_print_reverse_alphabet
+02 ft_print_reverse_alphabet(https://github.com/artacone/piscine21/blob/main/c00/myc00/ex00/ft_putchar.c)
 
-03 ft_print_numbers
+03 ft_print_numbers(https://github.com/artacone/piscine21/blob/main/c00/myc00/ex00/ft_putchar.c)
 
-04 ft_is_negative
+04 ft_is_negative(https://github.com/artacone/piscine21/blob/main/c00/myc00/ex00/ft_putchar.c)
 
-05 ft_print_comb
+05 ft_print_comb(https://github.com/artacone/piscine21/blob/main/c00/myc00/ex00/ft_putchar.c)
 
-06 ft_print_comb2
+06 ft_print_comb2(https://github.com/artacone/piscine21/blob/main/c00/myc00/ex00/ft_putchar.c)
 
-07 ft_putnbr -- needs optimization
+07 ft_putnbr(https://github.com/artacone/piscine21/blob/main/c00/myc00/ex00/ft_putchar.c) -- *needs optimization?*
 
-08 ft_print_combn -- KO
+08 ft_print_combn(https://github.com/artacone/piscine21/blob/main/c00/myc00/ex00/ft_putchar.c) -- **KO**
 
 ### c01
 00 ft_ft
