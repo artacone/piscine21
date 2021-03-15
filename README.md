@@ -184,7 +184,7 @@ Contains materials from School 21's C Piscine.
 - 07 [ft_advanced_sort_string](https://github.com/artacone/piscine21/tree/main/c11/myc11/ex07)
 
 ### c12
-- 00 ft_create_elem[](https]://github.com/artacone/piscine21/tree/main/c12/myc12/ex00)
+- 00 [ft_create_elem](https://github.com/artacone/piscine21/tree/main/c12/myc12/ex00)
 
 - 01 [ft_list_push_front](https://github.com/artacone/piscine21/tree/main/c12/myc12/ex01)
 
